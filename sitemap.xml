@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://run-stop-restore.githup.io/posts/chess/</loc>
+    <loc>/posts/chess/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
   </url><url>
-    <loc>https://run-stop-restore.githup.io/tags/games/</loc>
+    <loc>/tags/games/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
   </url><url>
-    <loc>https://run-stop-restore.githup.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
   </url><url>
-    <loc>https://run-stop-restore.githup.io/</loc>
+    <loc>/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
   </url><url>
-    <loc>https://run-stop-restore.githup.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
   </url><url>
-    <loc>https://run-stop-restore.githup.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2021-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://run-stop-restore.githup.io/tags/physics/</loc>
+    <loc>/tags/physics/</loc>
     <lastmod>2021-10-15T10:21:49+02:00</lastmod>
   </url><url>
-    <loc>https://run-stop-restore.githup.io/posts/physics/</loc>
+    <loc>/posts/physics/</loc>
     <lastmod>2021-10-15T10:21:49+02:00</lastmod>
   </url>
 </urlset>

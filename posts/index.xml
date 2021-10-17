@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Run/Stop Restore</title>
-		<link>https://run-stop-restore.githup.io/posts/</link>
+		<link>/posts/</link>
 		<description>Recent content in Posts on Run/Stop Restore</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
 		<lastBuildDate>Sun, 17 Oct 2021 13:40:14 +0200</lastBuildDate>
-		<atom:link href="https://run-stop-restore.githup.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>Chess</title>
-			<link>https://run-stop-restore.githup.io/posts/chess/</link>
+			<link>/posts/chess/</link>
 			<pubDate>Sun, 17 Oct 2021 13:40:14 +0200</pubDate>
 			
-			<guid>https://run-stop-restore.githup.io/posts/chess/</guid>
+			<guid>/posts/chess/</guid>
 			<description>A basic implementation of chess written in C++14. It uses a mixture of bitboards and 0x88 with most information gathered from Chess Programming Wiki. The AI uses minimax with alpha-beta pruning plus an opening book. There is definitely room for improvements wrt. gameplay, performance and presentation.
 There is also a short video of it running on an Android phone using Vulkan.
 Requires WebGL2.
@@ -119,10 +119,10 @@ Controls Use left mouse button to select / deselect a piece.</description>
 		
 		<item>
 			<title>Physics Engine Demo</title>
-			<link>https://run-stop-restore.githup.io/posts/physics/</link>
+			<link>/posts/physics/</link>
 			<pubDate>Fri, 15 Oct 2021 10:21:49 +0200</pubDate>
 			
-			<guid>https://run-stop-restore.githup.io/posts/physics/</guid>
+			<guid>/posts/physics/</guid>
 			<description>This is a test of my physics engine written in C++14 running in the browser using Emscripten / WASM. WebGL2 is required. The yellow entity is connected using a universal joint with two different limits. The three cyan entities are connected using multiple hinges with limits. The blue entity uses a cone joint and is currently still a work in progress.
 There is also a short video of it running on Windows 10 using Vulkan.</description>
 			<content type="html"><![CDATA[<p>This is a test of my physics engine written in C++14 running in the browser using Emscripten / WASM. WebGL2 is required.
