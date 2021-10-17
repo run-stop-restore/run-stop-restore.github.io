@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>physics on Run/Stop Restore</title>
+    <link>https://run-stop-restore.githup.io/tags/physics/</link>
+    <description>Recent content in physics on Run/Stop Restore</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 15 Oct 2021 10:21:49 +0200</lastBuildDate><atom:link href="https://run-stop-restore.githup.io/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Physics Engine Demo</title>
+      <link>https://run-stop-restore.githup.io/posts/physics/</link>
+      <pubDate>Fri, 15 Oct 2021 10:21:49 +0200</pubDate>
+      
+      <guid>https://run-stop-restore.githup.io/posts/physics/</guid>
+      <description>This is a test of my physics engine written in C++14 running in the browser using Emscripten / WASM. WebGL2 is required. The yellow entity is connected using a universal joint with two different limits. The three cyan entities are connected using multiple hinges with limits. The blue entity uses a cone joint and is currently still a work in progress.
+There is also a short video of it running on Windows 10 using Vulkan.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,231 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Run/Stop Restore</title>
+		<link>https://run-stop-restore.githup.io/posts/</link>
+		<description>Recent content in Posts on Run/Stop Restore</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Sun, 17 Oct 2021 13:40:14 +0200</lastBuildDate>
+		<atom:link href="https://run-stop-restore.githup.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Chess</title>
+			<link>https://run-stop-restore.githup.io/posts/chess/</link>
+			<pubDate>Sun, 17 Oct 2021 13:40:14 +0200</pubDate>
+			
+			<guid>https://run-stop-restore.githup.io/posts/chess/</guid>
+			<description>A basic implementation of chess written in C++14. It uses a mixture of bitboards and 0x88 with most information gathered from Chess Programming Wiki. The AI uses minimax with alpha-beta pruning plus an opening book. There is definitely room for improvements wrt. gameplay, performance and presentation.
+There is also a short video of it running on an Android phone using Vulkan.
+Requires WebGL2.
+Controls Use left mouse button to select / deselect a piece.</description>
+			<content type="html"><![CDATA[<p>A basic implementation of chess written in C++14. It uses a mixture of bitboards and 0x88 with most information gathered from <a href="https://www.chessprogramming.org">Chess Programming Wiki</a>. The AI uses minimax with alpha-beta pruning plus an opening book. There is definitely room for improvements wrt. gameplay, performance and presentation.</p>
+<p>There is also a <a href="https://www.youtube.com/watch?v=ExMhUCA-rpo">short video</a> of it running on an Android phone using Vulkan.</p>
+<p>Requires WebGL2.</p>
+<h3 id="controls">Controls</h3>
+<p>Use left mouse button to select / deselect a piece.
+<code>F2</code> to cycle through pawn promotions.</p>
+<br/>
+<style>
+
+
+	 
+
+
+	.emscripten { 
+
+
+		max-width: 100%;
+		height: auto;
+		margin: 0;
+		text-align: center;
+
+	    width: 1024px;
+	    margin-left: -180px;
+		max-width: 1024px;
+	     
+
+	}
+	 
+	
+	div.emscripten_border {
+		border: 5px solid black;
+		display: inline-block;
+	}
+
+	 
+	canvas.emscripten {
+		outline: black 1px solid;
+		border: 0px none;
+		background-color: black;
+		margin: 0;
+    	 
+ 	}
+
+</style>
+
+
+<div class="emscripten">
+	<canvas class="emscripten" id="canvas" width=1024 height=576 oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
+</div>
+
+<script type='text/javascript'>
+	var Module = {
+		locateFile: function(path, prefix) {
+			return prefix + "../../apps/chess/" + path;
+		},
+	    preRun: [],
+	    postRun: [],
+       print: (function() {
+          var element = document.getElementById('output');
+          if (element) element.value = ''; 
+          return function(text) {
+            if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
+            
+            
+            
+            
+            
+            console.log(text);
+            if (element) {
+              element.value += text + "\n";
+              element.scrollTop = element.scrollHeight; 
+            }
+          };
+        })(),	    
+	    canvas: (function() {
+	        var canvas = document.getElementById('canvas');
+
+	        
+	        
+	        
+	        canvas.addEventListener("webglcontextlost", function(e) { alert('WebGL context lost. You will need to reload the page.'); e.preventDefault(); }, false);
+
+	        return canvas;
+	    })(),
+	};
+</script>
+<script async type="text/javascript" src=../../apps/chess/game.js></script>
+
+<br/>
+<h3 id="third-party-software-used">Third-party software used</h3>
+<ul>
+<li><a href="https://www.freetype.org/">Freetype</a> under the <a href="https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/docs/FTL.TXT">Freetype license (FTL)</a>.</li>
+<li><a href="https://github.com/harfbuzz/harfbuzz">Harfbuzz</a> under the <a href="https://github.com/harfbuzz/harfbuzz/blob/main/COPYING">MIT license</a>.</li>
+<li><a href="https://github.com/nothings/stb">stb_image.h</a> under <a href="https://github.com/nothings/stb/blob/master/LICENSE">public domain license</a>.</li>
+</ul>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Physics Engine Demo</title>
+			<link>https://run-stop-restore.githup.io/posts/physics/</link>
+			<pubDate>Fri, 15 Oct 2021 10:21:49 +0200</pubDate>
+			
+			<guid>https://run-stop-restore.githup.io/posts/physics/</guid>
+			<description>This is a test of my physics engine written in C++14 running in the browser using Emscripten / WASM. WebGL2 is required. The yellow entity is connected using a universal joint with two different limits. The three cyan entities are connected using multiple hinges with limits. The blue entity uses a cone joint and is currently still a work in progress.
+There is also a short video of it running on Windows 10 using Vulkan.</description>
+			<content type="html"><![CDATA[<p>This is a test of my physics engine written in C++14 running in the browser using Emscripten / WASM. WebGL2 is required.
+The yellow entity is connected using a universal joint with two different limits. The three cyan entities are connected using multiple hinges with limits. The blue entity uses a cone joint and is currently still a work in progress.</p>
+<p>There is also a <a href="https://www.youtube.com/watch?v=5VLH5qaVGDo">short video</a> of it running on Windows 10 using Vulkan.</p>
+<h3 id="controls">Controls</h3>
+<p><code>NUMPAD +</code> and <code>NUMPAD -</code> will change the resolution of the shadow map.
+<code>F3</code> toggles <a href="http://www.iryoku.com/smaa/">SMAA</a> on / off.</p>
+<p>Use a gamepad, WSAD or arrow keys to control the sphere. If using a gamepad (tested using Xbox 360 controller) then pressing the <code>A</code> button will give a boost in the current direction of travel. The sphere uses high friction so that it feels better to control. All contacts are also made soft to improve stability. This does mean that it is currently possible to get stuck between multiple static objects such as the floor and ramps.
+Entities can be selected and inspected using the left mouse button and deselected by pressing <code>ESC</code>.</p>
+<br/>
+<style>
+
+
+	 
+
+
+	.emscripten { 
+
+
+		max-width: 100%;
+		height: auto;
+		margin: 0;
+		text-align: center;
+
+	    width: 1024px;
+	    margin-left: -180px;
+		max-width: 1024px;
+	     
+
+	}
+	 
+	
+	div.emscripten_border {
+		border: 5px solid black;
+		display: inline-block;
+	}
+
+	 
+	canvas.emscripten {
+		outline: black 1px solid;
+		border: 0px none;
+		background-color: black;
+		margin: 0;
+    	 
+ 	}
+
+</style>
+
+
+<div class="emscripten">
+	<canvas class="emscripten" id="canvas" width=1024 height=576 oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
+</div>
+
+<script type='text/javascript'>
+	var Module = {
+		locateFile: function(path, prefix) {
+			return prefix + "../../apps/physics_demo/" + path;
+		},
+	    preRun: [],
+	    postRun: [],
+       print: (function() {
+          var element = document.getElementById('output');
+          if (element) element.value = ''; 
+          return function(text) {
+            if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
+            
+            
+            
+            
+            
+            console.log(text);
+            if (element) {
+              element.value += text + "\n";
+              element.scrollTop = element.scrollHeight; 
+            }
+          };
+        })(),	    
+	    canvas: (function() {
+	        var canvas = document.getElementById('canvas');
+
+	        
+	        
+	        
+	        canvas.addEventListener("webglcontextlost", function(e) { alert('WebGL context lost. You will need to reload the page.'); e.preventDefault(); }, false);
+
+	        return canvas;
+	    })(),
+	};
+</script>
+<script async type="text/javascript" src=../../apps/physics_demo/game.js></script>
+
+<br/>
+<h3 id="third-party-software-used">Third-party software used</h3>
+<ul>
+<li><a href="https://github.com/iryoku/smaa">SMAA</a> under the <a href="https://github.com/iryoku/smaa/blob/master/LICENSE.txt">MIT license</a>.</li>
+<li><a href="https://github.com/danfis/libccd">libccd</a> used for collision tests vs cylinders, capsules and cones. <a href="https://github.com/danfis/libccd/blob/master/BSD-LICENSE">BSD license</a>.</li>
+<li><a href="https://www.freetype.org/">Freetype</a> under the <a href="https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/docs/FTL.TXT">Freetype license (FTL)</a>.</li>
+<li><a href="https://github.com/harfbuzz/harfbuzz">Harfbuzz</a> under the <a href="https://github.com/harfbuzz/harfbuzz/blob/main/COPYING">MIT license</a>.</li>
+<li><a href="https://github.com/nothings/stb">stb_image.h</a> under <a href="https://github.com/nothings/stb/blob/master/LICENSE">public domain license</a>.</li>
+</ul>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>games on Run/Stop Restore</title>
+    <link>https://run-stop-restore.githup.io/tags/games/</link>
+    <description>Recent content in games on Run/Stop Restore</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 17 Oct 2021 13:40:14 +0200</lastBuildDate><atom:link href="https://run-stop-restore.githup.io/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chess</title>
+      <link>https://run-stop-restore.githup.io/posts/chess/</link>
+      <pubDate>Sun, 17 Oct 2021 13:40:14 +0200</pubDate>
+      
+      <guid>https://run-stop-restore.githup.io/posts/chess/</guid>
+      <description>A basic implementation of chess written in C++14. It uses a mixture of bitboards and 0x88 with most information gathered from Chess Programming Wiki. The AI uses minimax with alpha-beta pruning plus an opening book. There is definitely room for improvements wrt. gameplay, performance and presentation.
+There is also a short video of it running on an Android phone using Vulkan.
+Requires WebGL2.
+Controls Use left mouse button to select / deselect a piece.</description>
+    </item>
+    
+  </channel>
+</rss>
