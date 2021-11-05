@@ -128,6 +128,7 @@ var Module = typeof Module !== 'undefined' ? Module : {};
 Module['FS_createPath']("/data", "chess", true, true);
 Module['FS_createPath']("/data/chess", "book", true, true);
 Module['FS_createPath']("/data", "fonts", true, true);
+Module['FS_createPath']("/data", "levels", true, true);
 Module['FS_createPath']("/data", "shaders", true, true);
 Module['FS_createPath']("/data/shaders", "gles300", true, true);
 Module['FS_createPath']("/data", "textures", true, true);
@@ -204,7 +205,7 @@ Module['FS_createPath']("/data/textures", "chess", true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/data/chess/book/book_10ply_all.bin", "start": 0, "end": 182784}, {"filename": "/data/fonts/DejaVuSans.ttf", "start": 182784, "end": 902796}, {"filename": "/data/shaders/gles300/checkerboard.frag.shader", "start": 902796, "end": 903464}, {"filename": "/data/shaders/gles300/clear_color_float.frag.shader", "start": 903464, "end": 903920}, {"filename": "/data/shaders/gles300/clear_color_int.frag.shader", "start": 903920, "end": 904376}, {"filename": "/data/shaders/gles300/clear_color_uint.frag.shader", "start": 904376, "end": 904828}, {"filename": "/data/shaders/gles300/clear_depth.frag.shader", "start": 904828, "end": 905228}, {"filename": "/data/shaders/gles300/clustered_shading.vert.shader", "start": 905228, "end": 905964}, {"filename": "/data/shaders/gles300/clustered_shading_instanced.vert.shader", "start": 905964, "end": 906792}, {"filename": "/data/shaders/gles300/color_only.frag.shader", "start": 906792, "end": 907244}, {"filename": "/data/shaders/gles300/depth_aware_blur.frag.shader", "start": 907244, "end": 908548}, {"filename": "/data/shaders/gles300/depth_aware_blurH.frag.shader", "start": 908548, "end": 909724}, {"filename": "/data/shaders/gles300/depth_aware_blurH_linear.frag.shader", "start": 909724, "end": 910640}, {"filename": "/data/shaders/gles300/depth_aware_blurV.frag.shader", "start": 910640, "end": 911816}, {"filename": "/data/shaders/gles300/depth_aware_blurV_linear.frag.shader", "start": 911816, "end": 912732}, {"filename": "/data/shaders/gles300/depth_aware_blur_linear.frag.shader", "start": 912732, "end": 913784}, {"filename": "/data/shaders/gles300/depth_aware_upsampling.frag.shader", "start": 913784, "end": 915112}, {"filename": "/data/shaders/gles300/depth_min_max_reduce.frag.shader", "start": 915112, "end": 915956}, {"filename": "/data/shaders/gles300/depth_min_max_reduce2.frag.shader", "start": 915956, "end": 916944}, {"filename": "/data/shaders/gles300/depth_only.frag.shader", "start": 916944, "end": 917224}, {"filename": "/data/shaders/gles300/depth_only_alpha_greater_equal.frag.shader", "start": 917224, "end": 917824}, {"filename": "/data/shaders/gles300/depth_only_alpha_test.frag.shader", "start": 917824, "end": 918432}, {"filename": "/data/shaders/gles300/depth_reduce_min.frag.shader", "start": 918432, "end": 919056}, {"filename": "/data/shaders/gles300/directional_lighting.frag.shader", "start": 919056, "end": 920916}, {"filename": "/data/shaders/gles300/directional_lighting.vert.shader", "start": 920916, "end": 921852}, {"filename": "/data/shaders/gles300/directional_lighting2.frag.shader", "start": 921852, "end": 923720}, {"filename": "/data/shaders/gles300/directional_lighting3.frag.shader", "start": 923720, "end": 925984}, {"filename": "/data/shaders/gles300/directional_lighting_csm.vert.shader", "start": 925984, "end": 926952}, {"filename": "/data/shaders/gles300/directional_lighting_csm_instanced.vert.shader", "start": 926952, "end": 927884}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf.frag.shader", "start": 927884, "end": 929984}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf3.frag.shader", "start": 929984, "end": 932312}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf3_debug.frag.shader", "start": 932312, "end": 934724}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf5.frag.shader", "start": 934724, "end": 937108}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf5_debug.frag.shader", "start": 937108, "end": 939580}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf7.frag.shader", "start": 939580, "end": 942032}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf7_debug.frag.shader", "start": 942032, "end": 944572}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf_debug.frag.shader", "start": 944572, "end": 946756}, {"filename": "/data/shaders/gles300/font.frag.shader", "start": 946756, "end": 947460}, {"filename": "/data/shaders/gles300/fullscreen.vert.shader", "start": 947460, "end": 947836}, {"filename": "/data/shaders/gles300/fullscreen_quad.vert.shader", "start": 947836, "end": 948192}, {"filename": "/data/shaders/gles300/fullscreen_with_uv.vert.shader", "start": 948192, "end": 948612}, {"filename": "/data/shaders/gles300/fullscreen_z.vert.shader", "start": 948612, "end": 949088}, {"filename": "/data/shaders/gles300/fullscreen_z_with_uv.vert.shader", "start": 949088, "end": 949604}, {"filename": "/data/shaders/gles300/gbuffer_z_n.vert.shader", "start": 949604, "end": 950484}, {"filename": "/data/shaders/gles300/gbuffer_z_n_instanced.vert.shader", "start": 950484, "end": 951392}, {"filename": "/data/shaders/gles300/hdr_log_luminance.frag.shader", "start": 951392, "end": 952020}, {"filename": "/data/shaders/gles300/hdr_luminance_adapt.frag.shader", "start": 952020, "end": 952696}, {"filename": "/data/shaders/gles300/hdr_luminance_reduce.frag.shader", "start": 952696, "end": 953576}, {"filename": "/data/shaders/gles300/hdr_tone_map.frag.shader", "start": 953576, "end": 954400}, {"filename": "/data/shaders/gles300/hdr_tone_map_auto_exposure.frag.shader", "start": 954400, "end": 955568}, {"filename": "/data/shaders/gles300/hdr_tone_map_manual_exposure.frag.shader", "start": 955568, "end": 956712}, {"filename": "/data/shaders/gles300/lighting.frag.shader", "start": 956712, "end": 958504}, {"filename": "/data/shaders/gles300/lighting.vert.shader", "start": 958504, "end": 959240}, {"filename": "/data/shaders/gles300/linearize_depth.frag.shader", "start": 959240, "end": 960024}, {"filename": "/data/shaders/gles300/modulate_texture.frag.shader", "start": 960024, "end": 960648}, {"filename": "/data/shaders/gles300/modulate_texture.vert.shader", "start": 960648, "end": 961196}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded.frag.shader", "start": 961196, "end": 962020}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded.vert.shader", "start": 962020, "end": 962788}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded2.frag.shader", "start": 962788, "end": 963616}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded2.vert.shader", "start": 963616, "end": 964352}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded2sm.frag.shader", "start": 964352, "end": 965788}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded2sm.vert.shader", "start": 965788, "end": 966592}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm.vert.shader", "start": 966592, "end": 967448}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm_pcf.frag.shader", "start": 967448, "end": 968636}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm_pcf3.frag.shader", "start": 968636, "end": 970064}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm_pcf5.frag.shader", "start": 970064, "end": 971548}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm_pcf7.frag.shader", "start": 971548, "end": 973104}, {"filename": "/data/shaders/gles300/modulate_texture_transform.frag.shader", "start": 973104, "end": 973800}, {"filename": "/data/shaders/gles300/position_only.vert.shader", "start": 973800, "end": 974256}, {"filename": "/data/shaders/gles300/position_only_skinning.vert.shader", "start": 974256, "end": 975136}, {"filename": "/data/shaders/gles300/position_zero.vert.shader", "start": 975136, "end": 975404}, {"filename": "/data/shaders/gles300/pos_col.vert.shader", "start": 975404, "end": 975948}, {"filename": "/data/shaders/gles300/pos_col_point_size.vert.shader", "start": 975948, "end": 976540}, {"filename": "/data/shaders/gles300/pos_point_size.vert.shader", "start": 976540, "end": 977060}, {"filename": "/data/shaders/gles300/pos_uv.vert.shader", "start": 977060, "end": 977616}, {"filename": "/data/shaders/gles300/pos_uv_col.vert.shader", "start": 977616, "end": 978220}, {"filename": "/data/shaders/gles300/pos_uv_col_transform2.vert.shader", "start": 978220, "end": 978864}, {"filename": "/data/shaders/gles300/pos_uv_transform.vert.shader", "start": 978864, "end": 979572}, {"filename": "/data/shaders/gles300/raymarch.frag.shader", "start": 979572, "end": 981292}, {"filename": "/data/shaders/gles300/raymarch_aabb_dist.frag.shader", "start": 981292, "end": 982504}, {"filename": "/data/shaders/gles300/raymarch_volumetric_step1.frag.shader", "start": 982504, "end": 984368}, {"filename": "/data/shaders/gles300/raymarch_volumetric_step2.frag.shader", "start": 984368, "end": 986396}, {"filename": "/data/shaders/gles300/raymarch_volumetric_step3.frag.shader", "start": 986396, "end": 988520}, {"filename": "/data/shaders/gles300/raymarch_volumetric_step4.frag.shader", "start": 988520, "end": 990636}, {"filename": "/data/shaders/gles300/simple_diffuse_lighting.frag.shader", "start": 990636, "end": 991304}, {"filename": "/data/shaders/gles300/skinning.vert.shader", "start": 991304, "end": 992732}, {"filename": "/data/shaders/gles300/skinning_ubo2.vert.shader", "start": 992732, "end": 993688}, {"filename": "/data/shaders/gles300/smaa_blend.frag.shader", "start": 993688, "end": 996272}, {"filename": "/data/shaders/gles300/smaa_blend.vert.shader", "start": 996272, "end": 997108}, {"filename": "/data/shaders/gles300/smaa_blend_dynamic_size.frag.shader", "start": 997108, "end": 999576}, {"filename": "/data/shaders/gles300/smaa_blend_dynamic_size.vert.shader", "start": 999576, "end": 1000316}, {"filename": "/data/shaders/gles300/smaa_edge_detection.frag.shader", "start": 1000316, "end": 1001412}, {"filename": "/data/shaders/gles300/smaa_edge_detection.vert.shader", "start": 1001412, "end": 1002160}, {"filename": "/data/shaders/gles300/smaa_edge_detection_dynamic_size.frag.shader", "start": 1002160, "end": 1003096}, {"filename": "/data/shaders/gles300/smaa_edge_detection_dynamic_size.vert.shader", "start": 1003096, "end": 1003752}, {"filename": "/data/shaders/gles300/smaa_neighborhood.frag.shader", "start": 1003752, "end": 1004968}, {"filename": "/data/shaders/gles300/smaa_neighborhood.vert.shader", "start": 1004968, "end": 1005688}, {"filename": "/data/shaders/gles300/smaa_neighborhood_dynamic_size.frag.shader", "start": 1005688, "end": 1006808}, {"filename": "/data/shaders/gles300/smaa_neighborhood_dynamic_size.vert.shader", "start": 1006808, "end": 1007432}, {"filename": "/data/shaders/gles300/ssao.frag.shader", "start": 1007432, "end": 1009060}, {"filename": "/data/shaders/gles300/ssr.frag.shader", "start": 1009060, "end": 1010912}, {"filename": "/data/shaders/gles300/test_instancing.frag.shader", "start": 1010912, "end": 1011352}, {"filename": "/data/shaders/gles300/test_tessellation_lod.frag.shader", "start": 1011352, "end": 1011804}, {"filename": "/data/shaders/gles300/test_tessellation_lod.vert.shader", "start": 1011804, "end": 1012160}, {"filename": "/data/shaders/gles300/texture_color.frag.shader", "start": 1012160, "end": 1012816}, {"filename": "/data/shaders/gles300/texture_color2.frag.shader", "start": 1012816, "end": 1013376}, {"filename": "/data/shaders/gles300/texture_color_premult_alpha.frag.shader", "start": 1013376, "end": 1014064}, {"filename": "/data/shaders/gles300/texture_only.frag.shader", "start": 1014064, "end": 1014600}, {"filename": "/data/shaders/gles300/tile_depth_min_max.frag.shader", "start": 1014600, "end": 1015676}, {"filename": "/data/shaders/gles300/vertex_color.frag.shader", "start": 1015676, "end": 1016172}, {"filename": "/data/shaders/gles300/vg_box_gradient.frag.shader", "start": 1016172, "end": 1017216}, {"filename": "/data/shaders/gles300/vg_linear_gradient.frag.shader", "start": 1017216, "end": 1018008}, {"filename": "/data/shaders/gles300/vg_modulate_texture.frag.shader", "start": 1018008, "end": 1018688}, {"filename": "/data/shaders/gles300/vg_modulate_texture.vert.shader", "start": 1018688, "end": 1019288}, {"filename": "/data/shaders/gles300/vg_radial_gradient.frag.shader", "start": 1019288, "end": 1020324}, {"filename": "/data/shaders/gles300/visualize_bones.frag.shader", "start": 1020324, "end": 1020844}, {"filename": "/data/shaders/gles300/visualize_bones.vert.shader", "start": 1020844, "end": 1021560}, {"filename": "/data/shaders/gles300/visualize_depth.frag.shader", "start": 1021560, "end": 1022352}, {"filename": "/data/shaders/gles300/volumetric_lighting_interleaved_csm.frag.shader", "start": 1022352, "end": 1024376}, {"filename": "/data/shaders/gles300/wireframe.frag.shader", "start": 1024376, "end": 1025072}, {"filename": "/data/shaders/gles300/wireframe.vert.shader", "start": 1025072, "end": 1025428}, {"filename": "/data/textures/chess/bishop.png", "start": 1025428, "end": 1032410}, {"filename": "/data/textures/chess/king.png", "start": 1032410, "end": 1043217}, {"filename": "/data/textures/chess/king_blur.png", "start": 1043217, "end": 1077717}, {"filename": "/data/textures/chess/knight.png", "start": 1077717, "end": 1089438}, {"filename": "/data/textures/chess/pawn.png", "start": 1089438, "end": 1096090}, {"filename": "/data/textures/chess/queen.png", "start": 1096090, "end": 1107039}, {"filename": "/data/textures/chess/rook.png", "start": 1107039, "end": 1110281}], "remote_package_size": 1110281, "package_uuid": "4ba90f2e-427d-42a2-bf6e-3eecb38e7b6b"});
+   loadPackage({"files": [{"filename": "/data/chess/book/book_10ply_all.bin", "start": 0, "end": 182784}, {"filename": "/data/fonts/DejaVuSans.ttf", "start": 182784, "end": 902796}, {"filename": "/data/levels/level.json", "start": 902796, "end": 914799}, {"filename": "/data/shaders/gles300/checkerboard.frag.shader", "start": 914799, "end": 915467}, {"filename": "/data/shaders/gles300/clear_color_float.frag.shader", "start": 915467, "end": 915923}, {"filename": "/data/shaders/gles300/clear_color_int.frag.shader", "start": 915923, "end": 916379}, {"filename": "/data/shaders/gles300/clear_color_uint.frag.shader", "start": 916379, "end": 916831}, {"filename": "/data/shaders/gles300/clear_depth.frag.shader", "start": 916831, "end": 917231}, {"filename": "/data/shaders/gles300/clustered_shading.vert.shader", "start": 917231, "end": 917967}, {"filename": "/data/shaders/gles300/clustered_shading_instanced.vert.shader", "start": 917967, "end": 918795}, {"filename": "/data/shaders/gles300/color_only.frag.shader", "start": 918795, "end": 919247}, {"filename": "/data/shaders/gles300/depth_aware_blur.frag.shader", "start": 919247, "end": 920551}, {"filename": "/data/shaders/gles300/depth_aware_blurH.frag.shader", "start": 920551, "end": 921727}, {"filename": "/data/shaders/gles300/depth_aware_blurH_linear.frag.shader", "start": 921727, "end": 922643}, {"filename": "/data/shaders/gles300/depth_aware_blurV.frag.shader", "start": 922643, "end": 923819}, {"filename": "/data/shaders/gles300/depth_aware_blurV_linear.frag.shader", "start": 923819, "end": 924735}, {"filename": "/data/shaders/gles300/depth_aware_blur_linear.frag.shader", "start": 924735, "end": 925787}, {"filename": "/data/shaders/gles300/depth_aware_upsampling.frag.shader", "start": 925787, "end": 927115}, {"filename": "/data/shaders/gles300/depth_min_max_reduce.frag.shader", "start": 927115, "end": 927959}, {"filename": "/data/shaders/gles300/depth_min_max_reduce2.frag.shader", "start": 927959, "end": 928947}, {"filename": "/data/shaders/gles300/depth_only.frag.shader", "start": 928947, "end": 929227}, {"filename": "/data/shaders/gles300/depth_only_alpha_greater_equal.frag.shader", "start": 929227, "end": 929827}, {"filename": "/data/shaders/gles300/depth_only_alpha_test.frag.shader", "start": 929827, "end": 930435}, {"filename": "/data/shaders/gles300/depth_reduce_min.frag.shader", "start": 930435, "end": 931059}, {"filename": "/data/shaders/gles300/directional_lighting.frag.shader", "start": 931059, "end": 932919}, {"filename": "/data/shaders/gles300/directional_lighting.vert.shader", "start": 932919, "end": 933855}, {"filename": "/data/shaders/gles300/directional_lighting2.frag.shader", "start": 933855, "end": 935723}, {"filename": "/data/shaders/gles300/directional_lighting3.frag.shader", "start": 935723, "end": 937987}, {"filename": "/data/shaders/gles300/directional_lighting_csm.vert.shader", "start": 937987, "end": 938955}, {"filename": "/data/shaders/gles300/directional_lighting_csm_instanced.vert.shader", "start": 938955, "end": 939887}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf.frag.shader", "start": 939887, "end": 941987}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf3.frag.shader", "start": 941987, "end": 944315}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf3_debug.frag.shader", "start": 944315, "end": 946727}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf5.frag.shader", "start": 946727, "end": 949111}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf5_debug.frag.shader", "start": 949111, "end": 951583}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf7.frag.shader", "start": 951583, "end": 954035}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf7_debug.frag.shader", "start": 954035, "end": 956571}, {"filename": "/data/shaders/gles300/directional_lighting_csm_pcf_debug.frag.shader", "start": 956571, "end": 958755}, {"filename": "/data/shaders/gles300/font.frag.shader", "start": 958755, "end": 959459}, {"filename": "/data/shaders/gles300/fullscreen.vert.shader", "start": 959459, "end": 959835}, {"filename": "/data/shaders/gles300/fullscreen_quad.vert.shader", "start": 959835, "end": 960191}, {"filename": "/data/shaders/gles300/fullscreen_with_uv.vert.shader", "start": 960191, "end": 960611}, {"filename": "/data/shaders/gles300/fullscreen_z.vert.shader", "start": 960611, "end": 961087}, {"filename": "/data/shaders/gles300/fullscreen_z_with_uv.vert.shader", "start": 961087, "end": 961603}, {"filename": "/data/shaders/gles300/gbuffer_z_n.vert.shader", "start": 961603, "end": 962483}, {"filename": "/data/shaders/gles300/gbuffer_z_n_instanced.vert.shader", "start": 962483, "end": 963391}, {"filename": "/data/shaders/gles300/hdr_log_luminance.frag.shader", "start": 963391, "end": 964019}, {"filename": "/data/shaders/gles300/hdr_luminance_adapt.frag.shader", "start": 964019, "end": 964695}, {"filename": "/data/shaders/gles300/hdr_luminance_reduce.frag.shader", "start": 964695, "end": 965575}, {"filename": "/data/shaders/gles300/hdr_tone_map.frag.shader", "start": 965575, "end": 966399}, {"filename": "/data/shaders/gles300/hdr_tone_map_auto_exposure.frag.shader", "start": 966399, "end": 967567}, {"filename": "/data/shaders/gles300/hdr_tone_map_manual_exposure.frag.shader", "start": 967567, "end": 968711}, {"filename": "/data/shaders/gles300/lighting.frag.shader", "start": 968711, "end": 970503}, {"filename": "/data/shaders/gles300/lighting.vert.shader", "start": 970503, "end": 971239}, {"filename": "/data/shaders/gles300/linearize_depth.frag.shader", "start": 971239, "end": 972023}, {"filename": "/data/shaders/gles300/modulate_texture.frag.shader", "start": 972023, "end": 972647}, {"filename": "/data/shaders/gles300/modulate_texture.vert.shader", "start": 972647, "end": 973195}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded.frag.shader", "start": 973195, "end": 974019}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded.vert.shader", "start": 974019, "end": 974787}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded2.frag.shader", "start": 974787, "end": 975615}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded2.vert.shader", "start": 975615, "end": 976351}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded2sm.frag.shader", "start": 976351, "end": 977787}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded2sm.vert.shader", "start": 977787, "end": 978591}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm.vert.shader", "start": 978591, "end": 979447}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm_pcf.frag.shader", "start": 979447, "end": 980635}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm_pcf3.frag.shader", "start": 980635, "end": 982063}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm_pcf5.frag.shader", "start": 982063, "end": 983547}, {"filename": "/data/shaders/gles300/modulate_texture_flat_shaded_directional_light_csm_pcf7.frag.shader", "start": 983547, "end": 985103}, {"filename": "/data/shaders/gles300/modulate_texture_transform.frag.shader", "start": 985103, "end": 985799}, {"filename": "/data/shaders/gles300/position_only.vert.shader", "start": 985799, "end": 986255}, {"filename": "/data/shaders/gles300/position_only_skinning.vert.shader", "start": 986255, "end": 987135}, {"filename": "/data/shaders/gles300/position_zero.vert.shader", "start": 987135, "end": 987403}, {"filename": "/data/shaders/gles300/pos_col.vert.shader", "start": 987403, "end": 987947}, {"filename": "/data/shaders/gles300/pos_col_point_size.vert.shader", "start": 987947, "end": 988539}, {"filename": "/data/shaders/gles300/pos_point_size.vert.shader", "start": 988539, "end": 989059}, {"filename": "/data/shaders/gles300/pos_uv.vert.shader", "start": 989059, "end": 989615}, {"filename": "/data/shaders/gles300/pos_uv_col.vert.shader", "start": 989615, "end": 990219}, {"filename": "/data/shaders/gles300/pos_uv_col_transform2.vert.shader", "start": 990219, "end": 990863}, {"filename": "/data/shaders/gles300/pos_uv_transform.vert.shader", "start": 990863, "end": 991571}, {"filename": "/data/shaders/gles300/raymarch.frag.shader", "start": 991571, "end": 993291}, {"filename": "/data/shaders/gles300/raymarch_aabb_dist.frag.shader", "start": 993291, "end": 994503}, {"filename": "/data/shaders/gles300/raymarch_volumetric_step1.frag.shader", "start": 994503, "end": 996367}, {"filename": "/data/shaders/gles300/raymarch_volumetric_step2.frag.shader", "start": 996367, "end": 998395}, {"filename": "/data/shaders/gles300/raymarch_volumetric_step3.frag.shader", "start": 998395, "end": 1000519}, {"filename": "/data/shaders/gles300/raymarch_volumetric_step4.frag.shader", "start": 1000519, "end": 1002635}, {"filename": "/data/shaders/gles300/simple_diffuse_lighting.frag.shader", "start": 1002635, "end": 1003303}, {"filename": "/data/shaders/gles300/skinning.vert.shader", "start": 1003303, "end": 1004731}, {"filename": "/data/shaders/gles300/skinning_ubo2.vert.shader", "start": 1004731, "end": 1005687}, {"filename": "/data/shaders/gles300/smaa_blend.frag.shader", "start": 1005687, "end": 1008271}, {"filename": "/data/shaders/gles300/smaa_blend.vert.shader", "start": 1008271, "end": 1009107}, {"filename": "/data/shaders/gles300/smaa_blend_dynamic_size.frag.shader", "start": 1009107, "end": 1011575}, {"filename": "/data/shaders/gles300/smaa_blend_dynamic_size.vert.shader", "start": 1011575, "end": 1012315}, {"filename": "/data/shaders/gles300/smaa_edge_detection.frag.shader", "start": 1012315, "end": 1013411}, {"filename": "/data/shaders/gles300/smaa_edge_detection.vert.shader", "start": 1013411, "end": 1014159}, {"filename": "/data/shaders/gles300/smaa_edge_detection_dynamic_size.frag.shader", "start": 1014159, "end": 1015095}, {"filename": "/data/shaders/gles300/smaa_edge_detection_dynamic_size.vert.shader", "start": 1015095, "end": 1015751}, {"filename": "/data/shaders/gles300/smaa_neighborhood.frag.shader", "start": 1015751, "end": 1016967}, {"filename": "/data/shaders/gles300/smaa_neighborhood.vert.shader", "start": 1016967, "end": 1017687}, {"filename": "/data/shaders/gles300/smaa_neighborhood_dynamic_size.frag.shader", "start": 1017687, "end": 1018807}, {"filename": "/data/shaders/gles300/smaa_neighborhood_dynamic_size.vert.shader", "start": 1018807, "end": 1019431}, {"filename": "/data/shaders/gles300/ssao.frag.shader", "start": 1019431, "end": 1021059}, {"filename": "/data/shaders/gles300/ssr.frag.shader", "start": 1021059, "end": 1022911}, {"filename": "/data/shaders/gles300/test_instancing.frag.shader", "start": 1022911, "end": 1023351}, {"filename": "/data/shaders/gles300/test_tessellation_lod.frag.shader", "start": 1023351, "end": 1023803}, {"filename": "/data/shaders/gles300/test_tessellation_lod.vert.shader", "start": 1023803, "end": 1024159}, {"filename": "/data/shaders/gles300/texture_color.frag.shader", "start": 1024159, "end": 1024815}, {"filename": "/data/shaders/gles300/texture_color2.frag.shader", "start": 1024815, "end": 1025375}, {"filename": "/data/shaders/gles300/texture_color_premult_alpha.frag.shader", "start": 1025375, "end": 1026063}, {"filename": "/data/shaders/gles300/texture_only.frag.shader", "start": 1026063, "end": 1026599}, {"filename": "/data/shaders/gles300/tile_depth_min_max.frag.shader", "start": 1026599, "end": 1027675}, {"filename": "/data/shaders/gles300/vertex_color.frag.shader", "start": 1027675, "end": 1028171}, {"filename": "/data/shaders/gles300/vg_box_gradient.frag.shader", "start": 1028171, "end": 1029215}, {"filename": "/data/shaders/gles300/vg_linear_gradient.frag.shader", "start": 1029215, "end": 1030007}, {"filename": "/data/shaders/gles300/vg_modulate_texture.frag.shader", "start": 1030007, "end": 1030687}, {"filename": "/data/shaders/gles300/vg_modulate_texture.vert.shader", "start": 1030687, "end": 1031287}, {"filename": "/data/shaders/gles300/vg_radial_gradient.frag.shader", "start": 1031287, "end": 1032323}, {"filename": "/data/shaders/gles300/visualize_bones.frag.shader", "start": 1032323, "end": 1032843}, {"filename": "/data/shaders/gles300/visualize_bones.vert.shader", "start": 1032843, "end": 1033559}, {"filename": "/data/shaders/gles300/visualize_depth.frag.shader", "start": 1033559, "end": 1034351}, {"filename": "/data/shaders/gles300/volumetric_lighting_interleaved_csm.frag.shader", "start": 1034351, "end": 1036375}, {"filename": "/data/shaders/gles300/wireframe.frag.shader", "start": 1036375, "end": 1037071}, {"filename": "/data/shaders/gles300/wireframe.vert.shader", "start": 1037071, "end": 1037427}, {"filename": "/data/textures/ImphenziaPalette01.png", "start": 1037427, "end": 1038553}, {"filename": "/data/textures/chess/bishop.png", "start": 1038553, "end": 1045535}, {"filename": "/data/textures/chess/king.png", "start": 1045535, "end": 1056342}, {"filename": "/data/textures/chess/king_blur.png", "start": 1056342, "end": 1090842}, {"filename": "/data/textures/chess/knight.png", "start": 1090842, "end": 1102563}, {"filename": "/data/textures/chess/pawn.png", "start": 1102563, "end": 1109215}, {"filename": "/data/textures/chess/queen.png", "start": 1109215, "end": 1120164}, {"filename": "/data/textures/chess/rook.png", "start": 1120164, "end": 1123406}], "remote_package_size": 1123406, "package_uuid": "d3eded22-85e7-4307-a0dd-0197f5cde451"});
   
   })();
   
@@ -1923,10 +1924,10 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  312440: function($0) {var rect = Module[UTF8ToString($0)].getBoundingClientRect(); return rect.x;},  
- 312520: function($0) {var rect = Module[UTF8ToString($0)].getBoundingClientRect(); return rect.y + 1;},  
- 312604: function($0) {var rect = Module[UTF8ToString($0)].getBoundingClientRect(); return rect.x;},  
- 312684: function($0) {var rect = Module[UTF8ToString($0)].getBoundingClientRect(); return rect.y + 1;}
+  312984: function($0) {var rect = Module[UTF8ToString($0)].getBoundingClientRect(); return rect.x;},  
+ 313064: function($0) {var rect = Module[UTF8ToString($0)].getBoundingClientRect(); return rect.y + 1;},  
+ 313148: function($0) {var rect = Module[UTF8ToString($0)].getBoundingClientRect(); return rect.x;},  
+ 313228: function($0) {var rect = Module[UTF8ToString($0)].getBoundingClientRect(); return rect.y + 1;}
 };
 
 
@@ -6940,6 +6941,101 @@ var ASM_CONSTS = {
     }
   function _emscripten_set_resize_callback_on_thread(target, userData, useCapture, callbackfunc, targetThread) {
       registerUiEventCallback(target, userData, useCapture, callbackfunc, 10, "resize", targetThread);
+      return 0;
+    }
+
+  function registerTouchEventCallback(target, userData, useCapture, callbackfunc, eventTypeId, eventTypeString, targetThread) {
+      if (!JSEvents.touchEvent) JSEvents.touchEvent = _malloc( 1696 );
+  
+      target = findEventTarget(target);
+  
+      var touchEventHandlerFunc = function(e) {
+        assert(e);
+        var t, touches = {}, et = e.touches;
+        // To ease marshalling different kinds of touches that browser reports (all touches are listed in e.touches, 
+        // only changed touches in e.changedTouches, and touches on target at a.targetTouches), mark a boolean in
+        // each Touch object so that we can later loop only once over all touches we see to marshall over to Wasm.
+  
+        for (var i = 0; i < et.length; ++i) {
+          t = et[i];
+          // Browser might recycle the generated Touch objects between each frame (Firefox on Android), so reset any
+          // changed/target states we may have set from previous frame.
+          t.isChanged = t.onTarget = 0;
+          touches[t.identifier] = t;
+        }
+        // Mark which touches are part of the changedTouches list.
+        for (var i = 0; i < e.changedTouches.length; ++i) {
+          t = e.changedTouches[i];
+          t.isChanged = 1;
+          touches[t.identifier] = t;
+        }
+        // Mark which touches are part of the targetTouches list.
+        for (var i = 0; i < e.targetTouches.length; ++i) {
+          touches[e.targetTouches[i].identifier].onTarget = 1;
+        }
+  
+        var touchEvent = JSEvents.touchEvent;
+        HEAPF64[((touchEvent)>>3)] = e.timeStamp;
+        var idx = touchEvent>>2; // Pre-shift the ptr to index to HEAP32 to save code size
+        HEAP32[idx + 3] = e.ctrlKey;
+        HEAP32[idx + 4] = e.shiftKey;
+        HEAP32[idx + 5] = e.altKey;
+        HEAP32[idx + 6] = e.metaKey;
+        idx += 7; // Advance to the start of the touch array.
+        var targetRect = getBoundingClientRect(target);
+        var numTouches = 0;
+        for (var i in touches) {
+          var t = touches[i];
+          HEAP32[idx + 0] = t.identifier;
+          HEAP32[idx + 1] = t.screenX;
+          HEAP32[idx + 2] = t.screenY;
+          HEAP32[idx + 3] = t.clientX;
+          HEAP32[idx + 4] = t.clientY;
+          HEAP32[idx + 5] = t.pageX;
+          HEAP32[idx + 6] = t.pageY;
+          HEAP32[idx + 7] = t.isChanged;
+          HEAP32[idx + 8] = t.onTarget;
+          HEAP32[idx + 9] = t.clientX - targetRect.left;
+          HEAP32[idx + 10] = t.clientY - targetRect.top;
+  
+          idx += 13;
+  
+          if (++numTouches > 31) {
+            break;
+          }
+        }
+        HEAP32[(((touchEvent)+(8))>>2)] = numTouches;
+  
+        if (wasmTable.get(callbackfunc)(eventTypeId, touchEvent, userData)) e.preventDefault();
+      };
+  
+      var eventHandler = {
+        target: target,
+        allowsDeferredCalls: eventTypeString == 'touchstart' || eventTypeString == 'touchend',
+        eventTypeString: eventTypeString,
+        callbackfunc: callbackfunc,
+        handlerFunc: touchEventHandlerFunc,
+        useCapture: useCapture
+      };
+      JSEvents.registerOrRemoveHandler(eventHandler);
+    }
+  function _emscripten_set_touchcancel_callback_on_thread(target, userData, useCapture, callbackfunc, targetThread) {
+      registerTouchEventCallback(target, userData, useCapture, callbackfunc, 25, "touchcancel", targetThread);
+      return 0;
+    }
+
+  function _emscripten_set_touchend_callback_on_thread(target, userData, useCapture, callbackfunc, targetThread) {
+      registerTouchEventCallback(target, userData, useCapture, callbackfunc, 23, "touchend", targetThread);
+      return 0;
+    }
+
+  function _emscripten_set_touchmove_callback_on_thread(target, userData, useCapture, callbackfunc, targetThread) {
+      registerTouchEventCallback(target, userData, useCapture, callbackfunc, 24, "touchmove", targetThread);
+      return 0;
+    }
+
+  function _emscripten_set_touchstart_callback_on_thread(target, userData, useCapture, callbackfunc, targetThread) {
+      registerTouchEventCallback(target, userData, useCapture, callbackfunc, 22, "touchstart", targetThread);
       return 0;
     }
 
@@ -14470,101 +14566,10 @@ var ASM_CONSTS = {
       return 0;
     }
 
-  function registerTouchEventCallback(target, userData, useCapture, callbackfunc, eventTypeId, eventTypeString, targetThread) {
-      if (!JSEvents.touchEvent) JSEvents.touchEvent = _malloc( 1696 );
-  
-      target = findEventTarget(target);
-  
-      var touchEventHandlerFunc = function(e) {
-        assert(e);
-        var t, touches = {}, et = e.touches;
-        // To ease marshalling different kinds of touches that browser reports (all touches are listed in e.touches, 
-        // only changed touches in e.changedTouches, and touches on target at a.targetTouches), mark a boolean in
-        // each Touch object so that we can later loop only once over all touches we see to marshall over to Wasm.
-  
-        for (var i = 0; i < et.length; ++i) {
-          t = et[i];
-          // Browser might recycle the generated Touch objects between each frame (Firefox on Android), so reset any
-          // changed/target states we may have set from previous frame.
-          t.isChanged = t.onTarget = 0;
-          touches[t.identifier] = t;
-        }
-        // Mark which touches are part of the changedTouches list.
-        for (var i = 0; i < e.changedTouches.length; ++i) {
-          t = e.changedTouches[i];
-          t.isChanged = 1;
-          touches[t.identifier] = t;
-        }
-        // Mark which touches are part of the targetTouches list.
-        for (var i = 0; i < e.targetTouches.length; ++i) {
-          touches[e.targetTouches[i].identifier].onTarget = 1;
-        }
-  
-        var touchEvent = JSEvents.touchEvent;
-        HEAPF64[((touchEvent)>>3)] = e.timeStamp;
-        var idx = touchEvent>>2; // Pre-shift the ptr to index to HEAP32 to save code size
-        HEAP32[idx + 3] = e.ctrlKey;
-        HEAP32[idx + 4] = e.shiftKey;
-        HEAP32[idx + 5] = e.altKey;
-        HEAP32[idx + 6] = e.metaKey;
-        idx += 7; // Advance to the start of the touch array.
-        var targetRect = getBoundingClientRect(target);
-        var numTouches = 0;
-        for (var i in touches) {
-          var t = touches[i];
-          HEAP32[idx + 0] = t.identifier;
-          HEAP32[idx + 1] = t.screenX;
-          HEAP32[idx + 2] = t.screenY;
-          HEAP32[idx + 3] = t.clientX;
-          HEAP32[idx + 4] = t.clientY;
-          HEAP32[idx + 5] = t.pageX;
-          HEAP32[idx + 6] = t.pageY;
-          HEAP32[idx + 7] = t.isChanged;
-          HEAP32[idx + 8] = t.onTarget;
-          HEAP32[idx + 9] = t.clientX - targetRect.left;
-          HEAP32[idx + 10] = t.clientY - targetRect.top;
-  
-          idx += 13;
-  
-          if (++numTouches > 31) {
-            break;
-          }
-        }
-        HEAP32[(((touchEvent)+(8))>>2)] = numTouches;
-  
-        if (wasmTable.get(callbackfunc)(eventTypeId, touchEvent, userData)) e.preventDefault();
-      };
-  
-      var eventHandler = {
-        target: target,
-        allowsDeferredCalls: eventTypeString == 'touchstart' || eventTypeString == 'touchend',
-        eventTypeString: eventTypeString,
-        callbackfunc: callbackfunc,
-        handlerFunc: touchEventHandlerFunc,
-        useCapture: useCapture
-      };
-      JSEvents.registerOrRemoveHandler(eventHandler);
-    }
 
-  function _emscripten_set_touchstart_callback_on_thread(target, userData, useCapture, callbackfunc, targetThread) {
-      registerTouchEventCallback(target, userData, useCapture, callbackfunc, 22, "touchstart", targetThread);
-      return 0;
-    }
 
-  function _emscripten_set_touchend_callback_on_thread(target, userData, useCapture, callbackfunc, targetThread) {
-      registerTouchEventCallback(target, userData, useCapture, callbackfunc, 23, "touchend", targetThread);
-      return 0;
-    }
 
-  function _emscripten_set_touchmove_callback_on_thread(target, userData, useCapture, callbackfunc, targetThread) {
-      registerTouchEventCallback(target, userData, useCapture, callbackfunc, 24, "touchmove", targetThread);
-      return 0;
-    }
 
-  function _emscripten_set_touchcancel_callback_on_thread(target, userData, useCapture, callbackfunc, targetThread) {
-      registerTouchEventCallback(target, userData, useCapture, callbackfunc, 25, "touchcancel", targetThread);
-      return 0;
-    }
 
 
 
@@ -29476,6 +29481,10 @@ var asmLibraryArg = {
   "emscripten_set_mouseup_callback_on_thread": _emscripten_set_mouseup_callback_on_thread,
   "emscripten_set_pointerlockchange_callback_on_thread": _emscripten_set_pointerlockchange_callback_on_thread,
   "emscripten_set_resize_callback_on_thread": _emscripten_set_resize_callback_on_thread,
+  "emscripten_set_touchcancel_callback_on_thread": _emscripten_set_touchcancel_callback_on_thread,
+  "emscripten_set_touchend_callback_on_thread": _emscripten_set_touchend_callback_on_thread,
+  "emscripten_set_touchmove_callback_on_thread": _emscripten_set_touchmove_callback_on_thread,
+  "emscripten_set_touchstart_callback_on_thread": _emscripten_set_touchstart_callback_on_thread,
   "emscripten_set_wheel_callback_on_thread": _emscripten_set_wheel_callback_on_thread,
   "emscripten_thread_sleep": _emscripten_thread_sleep,
   "environ_get": _environ_get,
