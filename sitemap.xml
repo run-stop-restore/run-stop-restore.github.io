@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/about/</loc>
+    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/posts/chess/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
   </url><url>
     <loc>/tags/games/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
     <lastmod>2021-10-17T13:40:14+02:00</lastmod>
-  </url><url>
-    <loc>/about/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/physics/</loc>
     <lastmod>2021-10-15T10:21:49+02:00</lastmod>
